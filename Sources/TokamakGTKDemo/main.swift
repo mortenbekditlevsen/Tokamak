@@ -24,12 +24,12 @@ struct Counter: View {
   @State private var count: Int = 0
   var body: some View {
     VStack {
-      Text("\(count)")
+        Text("\(count)").background(Color(red: 0.5, green: 1, blue: 0.5))
       HStack {
         Button("Decrement") { count -= 1 }
         Button("Increment") { count += 1 }
       }
-        Image(bundle.bundlePath + "/logo-header.png", label: Text("Tokamak Demo"))
+      Image(bundle.bundlePath + "/logo-header.png", label: Text("Tokamak Demo"))
     }
   }
 }
